@@ -6,7 +6,16 @@ namespace Lesson001
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Exsecutor();
+        }
+        public static void Exsecutor()
+        {
+            string PrimaPars = "Привет, ", SecundaPars = ", сегодня ";
+            string Generalis = PrimaPars + Environment.UserName + SecundaPars + DateTime.Now;
+            Console.WriteLine( Generalis );
+            Console.WriteLine();
+            Console.WriteLine("Для выхода нажмите любую клавишу");
+            Console.Read();
         }
     }
 }
