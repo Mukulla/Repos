@@ -5,13 +5,17 @@ namespace Lesson002
     class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             Console.WriteLine("Часть первая - Средняя температура за сутки");            
             CalculateAverageTempe();
             Console.WriteLine();
             
             Console.WriteLine("Часть вторая - Название месяца по номеру");
             NameMonth();
+            Console.WriteLine();
+            */
+            Console.WriteLine("Часть третья - Определение чётности числа");
+            DetermineTheNumber();
             Console.WriteLine();
 
             Console.WriteLine();
@@ -73,6 +77,19 @@ namespace Lesson002
             }
 
             Console.WriteLine( Months[ ENM ] );
+        }
+
+        public static void DetermineTheNumber()
+        {
+            Console.WriteLine("Введите число ");
+            int SomeNumber = GetNumberFromString();
+
+            if( ( SomeNumber %= 2 ) == 0 )
+            {
+                Console.WriteLine("Чётное");
+                return;
+            }
+            Console.WriteLine("Нечётное");
         }
     }
 }
